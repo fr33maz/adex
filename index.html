@@ -23,14 +23,14 @@
 
             <div class="row py-5 align-items-center">
                 <a href="#" class="col-2"><img src="./img/logo.png" alt="logo"></a>
-                <ul class="col-xxl-4 col-md-7 ms-md-5 d-flex justify-content-between">
+                <ul class="col-xxl-4 col-md-7 ms-md-5 ms-xxl-0 d-flex justify-content-between">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Invest</a></li>
                     <li><a href="#">Reviews</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
-                <ul class="col-xxl-2 d-md-none  d-flex justify-content-between">
+                <ul class="col-xxl-2 d-md-none d-xxl-flex d-flex justify-content-between">
                     <li><a href="#"><img src="./img/svgs/twitter.svg" alt="twitter icon"></a></li>
                     <li><a href="#"><img src="./img/svgs/facebook.svg" alt="facebook icon"></a></li>
                     <li><a href="#"><img src="./img/svgs/youtube.svg" alt="youtube icon"></a></li>
@@ -47,6 +47,7 @@
                         <li><a class="dropdown-item text-light" href="#">Franch</a></li>
                     </ul>
                 </div>
+               
                 <div class="col-xxl-3 d-md-none d-xxl-flex d-flex gap-3 justify-content-end">
                     <a href="#" class="p-3  px-5 btn-dashboard">Dashboard</a>
 
@@ -88,10 +89,7 @@
                         data-bs-title="Make a new deposit">
                         New deposit
                     </button>
-                    <!-- <p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">123 <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p> -->
-                    <!-- <a href="#"
-                        class="col-xxl-2 d-xxl-inline d-md-none px-3 bg-white text-dark text-center rounded-pill py-3 deposit">
-                        <img class=" second-raw-icons" src="./img/svgs/add.svg" alt="">New deposit</a> -->
+             
                 </div>
             </div>
         </div>
@@ -158,7 +156,7 @@
                                 </div>
                                 <p class="fs-6 hero__money-deposit">+1.000</p>
                                 <p class="hero__money fs-6">10.000.000</p>
-                                <img class="smile" src="./img/check.png" alt="">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             </div>
                             <div class="d-flex align-items-center justify-content-around hero__primary-bottom">
                                 <div class="progress" role="progressbar" aria-label="Animated striped example"
@@ -188,7 +186,7 @@
                                 </div>
                                 <p class="fs-6 hero__money-deposit">+1.000</p>
                                 <p class="hero__money fs-6">10.000.000</p>
-                                <img class="smile" src="./img/check.png" alt="">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             </div>
                             <div class="d-flex align-items-center justify-content-around hero__primary-bottom">
                                 <div class="progress" role="progressbar" aria-label="Animated striped example"
@@ -217,7 +215,7 @@
                                 </div>
                                 <p class="fs-6 hero__money-deposit">+1.000</p>
                                 <p class="hero__money fs-6">10.000.000</p>
-                                <img class="smile" src="./img/check.png" alt="">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             </div>
                             <div class="d-flex align-items-center justify-content-around hero__primary-bottom">
                                 <div class="progress" role="progressbar" aria-label="Animated striped example"
@@ -246,7 +244,7 @@
                                 </div>
                                 <p class="fs-6 hero__money-deposit">+1.000</p>
                                 <p class="hero__money fs-6">10.000.000</p>
-                                <img class="smile" src="./img/check.png" alt="">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             </div>
                             <div class="d-flex align-items-center justify-content-around hero__primary-bottom">
                                 <div class="progress" role="progressbar" aria-label="Animated striped example"
@@ -275,7 +273,7 @@
                                 </div>
                                 <p class="fs-6 hero__money-deposit">+1.000</p>
                                 <p class="hero__money fs-6">10.000.000</p>
-                                <img class="smile" src="./img/check.png" alt="">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             </div>
                             <div class="d-flex align-items-center justify-content-around hero__primary-bottom">
                                 <div class="progress" role="progressbar" aria-label="Animated striped example"
@@ -294,7 +292,7 @@
                 </div>
                 <div class="col-1"></div>
                 <div
-                    class="col-xxl-4 col-md-8 col-lg-6 col-xl-5 m-md-auto  hero__aside d-flex flex-column justify-content-around">
+                    class="col-xxl-4 col-md-8 col-lg-6 col-xl-5 m-md-auto   hero__aside d-flex flex-column justify-content-around">
                     <h1 class="hero__aside-title  text-light mb-3">Info</h1>
                     <p class="hero__aside-description mb-5">of deposits</p>
                     <img src="./img/circle.png" class="d-inline-block mb-5" alt="" class="hero__aside-img">
@@ -307,10 +305,7 @@
                     <p class="hero__aside-info-description">Velit officia consequat duis enim velit mollit.</p>
                 </div>
             </div>
-            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <button type="button" class="btn btn-secondary">Before</button>
-                <button type="button" class="btn btn-primary">Next</button>
-              </div>
+   
         </section>
 
         <div class="container-fluid ">

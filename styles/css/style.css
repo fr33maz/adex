@@ -186,6 +186,11 @@ footer ul li a {
   color: var(--bs-gray-700);
 }
 
+.form-check-input {
+  width: 24px;
+  height: 24px;
+}
+
 .new-deposit {
   position: relative;
   border: none;
