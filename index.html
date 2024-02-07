@@ -11,11 +11,16 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="./js/scripts.js">
+
 </head>
 
 <body>
     <header>
+
         <div class="container">
+
+
             <div class="row py-5 align-items-center">
                 <a href="#" class="col-2"><img src="./img/logo.png" alt="logo"></a>
                 <ul class="col-xxl-4 col-md-7 ms-md-5 d-flex justify-content-between">
@@ -49,6 +54,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="second-raw ">
             <div class="container ">
                 <div class="row py-4 align-items-center">
@@ -56,38 +62,75 @@
                         class="col-xxl-9 col-md-12 mb-0  d-flex justify-content-between align-items-center list-style-0">
                         <li><a href="#"><img class="second-raw-icons" src="./img/svgs/dashboard.svg" alt="">
                                 Dashboard</a></li>
-                        <li><a href="#"><img class="second-raw-icons" src="./img/svgs/deposits.svg" alt=""> Deposits</a>
+                        <li><a href="#"><img class="second-raw-icons" src="./img/svgs/deposits.svg" alt="">
+                                Deposits</a>
                         </li>
                         <li><a href="#"><img class="second-raw-icons" src="./img/svgs/transactions.svg" alt="">
                                 Transactions</a></li>
-                        <li><a href="#"><img class="second-raw-icons" src="./img/svgs/withdraw.svg" alt=""> Withdraw</a>
+                        <li><a href="#"><img class="second-raw-icons" src="./img/svgs/withdraw.svg" alt="">
+                                Withdraw</a>
                         </li>
                         <li class="d-md-none d-lg-inline"><a href="#"><img class="second-raw-icons"
                                     src="./img/svgs/partners.svg" alt=""> Partners</a>
                         </li>
-                        <li><a href="#"><img class="second-raw-icons" src="./img/svgs/top.svg" alt=""> Top Up</a></li>
-                        <li><a href="#"><img class="second-raw-icons" src="./img/svgs/settings.svg" alt=""> Settings</a>
+                        <li><a href="#"><img class="second-raw-icons" src="./img/svgs/top.svg" alt=""> Top Up</a>
+                        </li>
+                        <li><a href="#"><img class="second-raw-icons" src="./img/svgs/settings.svg" alt="">
+                                Settings</a>
                         </li>
                     </ul>
-                    <a href="#" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover" class="col-xxl-1 d-xxl-inline d-md-none text-center"><img src="./img/svgs/bell.svg"
-                            alt=""></a>
-                    <a href="#"
+                    <a href="#" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+                        data-bs-content="Top popover" class="col-xxl-1 d-xxl-inline d-md-none text-center"><img
+                            src="./img/svgs/bell.svg" alt=""></a>
+                    <button type="button"
+                        class="btn btn-secondary col-xxl-2 d-xxl-inline d-md-none ps-0 bg-white text-dark text-center rounded-pill py-3 new-deposit"
+                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Make a new deposit">
+                        New deposit
+                    </button>
+                    <!-- <p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">123 <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p> -->
+                    <!-- <a href="#"
                         class="col-xxl-2 d-xxl-inline d-md-none px-3 bg-white text-dark text-center rounded-pill py-3 deposit">
-                        <img class=" second-raw-icons" src="./img/svgs/add.svg" alt="">New deposit</a>
+                        <img class=" second-raw-icons" src="./img/svgs/add.svg" alt="">New deposit</a> -->
                 </div>
             </div>
         </div>
+       
+        <div class="position-fixed bottom-0 end-0 p-3">
+            <div class="toast">
+                <div class=" toast-header">
+                    <strong class="me-auto">I'm tired of bootstrap</strong>
+                    <small>now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+
+                </div>
+                <div class="toast-body">
+                    I hope i will never touch it again
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const toastContent = document.querySelector('.toast');
+            const toast = new bootstrap.Toast(toastContent);
+            toast.show()
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
+
     </header>
     <main>
         <section class="container">
-            <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive"
+                aria-atomic="true">
                 <div class="d-flex">
-                  <div class="toast-body">
-                    Hello, world! This is a toast message.
-                  </div>
-                  <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    <div class="toast-body">
+                        Hello, world! This is a toast message.
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
                 </div>
-              </div>
+            </div>
             <div class="row">
                 <div class="col-xxl-7 col-md-12 hero">
                     <div>
@@ -264,18 +307,22 @@
                     <p class="hero__aside-info-description">Velit officia consequat duis enim velit mollit.</p>
                 </div>
             </div>
-            
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <button type="button" class="btn btn-secondary">Before</button>
+                <button type="button" class="btn btn-primary">Next</button>
+              </div>
         </section>
+
         <div class="container-fluid ">
             <div class="row">
                 <div class=" d-flex justify-content-between">
-                    <img class="d-md-none" src="./img/bitcoin.png" alt="">
-                    <img class="d-md-none" src="./img/chain.png" alt="">
-                    <img class="d-md-none" src="./img/litecoin.png" alt="">
-                    <img class="d-md-none" src="./img/etherium.png" alt="">
-                    <img class="d-md-none" src="./img/tron.png" alt="">
-                    <img class="d-md-none" src="./img/tether.png" alt="">
-                    <img class="d-md-none" src="./img/neo.png" alt="">
+                    <img class="d-md-none d-xxl-inline" src="./img/bitcoin.png" alt="">
+                    <img class="d-md-none d-xxl-inline" src="./img/chain.png" alt="">
+                    <img class="d-md-none d-xxl-inline" src="./img/litecoin.png" alt="">
+                    <img class="d-md-none d-xxl-inline" src="./img/etherium.png" alt="">
+                    <img class="d-md-none d-xxl-inline" src="./img/tron.png" alt="">
+                    <img class="d-md-none d-xxl-inline" src="./img/tether.png" alt="">
+                    <img class="d-md-none d-xxl-inline" src="./img/neo.png" alt="">
                     <img src="./img/binance.png" alt="">
                     <img src="./img/dogecoin.png" alt="">
                     <img src="./img/xrp.png" alt="">
@@ -284,6 +331,7 @@
                 </div>
             </div>
         </div>
+
     </main>
     <footer class="container ">
         <div class="row">
@@ -303,7 +351,8 @@
             </ul>
             <div class="col-1"></div>
 
-            <button type="button" class="col-xxl-2 col-md-3 rounded-pill text-center py-3 investment" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="col-xxl-2 col-md-3 rounded-pill text-center py-3 investment"
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Start Investment
             </button>
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -325,7 +374,7 @@
                 </div>
             </div>
 
-            <!-- <a href="#" class="col-xxl-2 col-md-3 rounded-pill text-center py-3 investment">Start Investment</a> -->
+
         </div>
         <div class="row">
             <p class="col-xxl-3 col-md-4">© 2021 Adex Capital Limited. All rights are reserved.</p>

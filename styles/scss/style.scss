@@ -78,7 +78,9 @@ p {
     border: 1px white solid;
     border-radius: 16px;
 }
+
 .hero {
+    
     &__segment {
         background-color: var(--bs-gray-800);
     }
@@ -196,4 +198,23 @@ footer {
         }
     }
     padding: 100px 0 32px;
+}
+.new-deposit {
+position: relative;
+border: none;
+text-align: left;
+display: inline-block;
+    &::before {
+        content: url("../../img/svgs/add.svg");
+        position: relative;
+        top: 4px;
+        left: 10px;
+    }
+}
+.btn-group {
+    .btn {
+        &::before {
+        content: "";
+    }
+    }
 }

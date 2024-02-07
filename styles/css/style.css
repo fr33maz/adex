@@ -186,4 +186,21 @@ footer ul li a {
   color: var(--bs-gray-700);
 }
 
+.new-deposit {
+  position: relative;
+  border: none;
+  text-align: left;
+  display: inline-block;
+}
+.new-deposit::before {
+  content: url("../../img/svgs/add.svg");
+  position: relative;
+  top: 4px;
+  left: 10px;
+}
+
+.btn-group .btn::before {
+  content: "";
+}
+
 /*# sourceMappingURL=style.css.map */
